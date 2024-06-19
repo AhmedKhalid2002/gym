@@ -1,0 +1,399 @@
+* {
+  font-family: "Port Lligat Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f10;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hover-text, .contact .main-info .social-info .logo p:hover, .home .nav .list-link a:hover, .home .nav .logo p:hover {
+  color: #EA454C;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.container {
+  width: 1320px;
+  margin-inline: auto;
+}
+
+.title {
+  color: #808080;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto 0;
+}
+.title::before {
+  content: "";
+  background-color: #EA454C;
+  width: 150px;
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  right: 60px;
+}
+
+.icon-menu, .x-menu {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  background-image: url("../../image/Home.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.home .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.home .nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.home .nav .logo p {
+  color: #fff;
+  font-size: 30px;
+  transition: all 1s;
+}
+.home .nav .logo img {
+  margin-left: 5px;
+}
+.home .nav .list-link {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.home .nav .list-link a {
+  font-size: 20px;
+  color: #fff;
+  transition: all 1s;
+}
+.home .nav .list-link .active {
+  color: #EA454C;
+  font-weight: bolder;
+}
+.home .home-title {
+  color: #fff;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.home .home-title .home-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home .home-title .home-sub .strong-title h1 {
+  font-size: 70px;
+  color: #EA454C;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 25px;
+}
+.home .home-title .home-sub .strong-title p {
+  width: 300px;
+  font-size: 20px;
+  font-family: "Stick No Bills", sans-serif;
+  color: #808080;
+  letter-spacing: 4px;
+  transform: translateY(-25px);
+  text-align: center;
+  margin-left: 25px;
+}
+.home .home-title .home-sub .offer {
+  transform: rotate(90deg);
+}
+.home .home-title .home-sub .offer h2 {
+  letter-spacing: 5px;
+  color: #808080;
+  font-size: 30px;
+}
+
+.client {
+  background-image: url(../../image/client.png);
+  margin: 30px 0;
+}
+.client .main-client .main-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+.client .main-client .card {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #24272E;
+  border-radius: 5px;
+}
+.client .main-client .card .card-text {
+  padding: 20px;
+}
+.client .main-client .card .card-text .rating {
+  color: rgb(226, 226, 13);
+  margin-top: 10px;
+}
+
+.plan {
+  padding: 20px;
+}
+.plan .main-card {
+  padding-block: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.plan .main-card .card {
+  color: #808080;
+  margin-block: 15px;
+  border: 3px solid #EA454C;
+  border-radius: 10px;
+}
+.plan .main-card .card .heading, .plan .main-card .card .sub-heading {
+  text-align: center;
+  margin-block: 10px;
+}
+.plan .main-card .card .sub-heading {
+  background-color: rgb(39, 38, 38);
+  padding: 10px;
+}
+.plan .main-card .card .content {
+  padding: 20px;
+}
+.plan .main-card .card .content p {
+  border-bottom: 2px solid #808080;
+  margin: 10px;
+}
+.plan .main-card .card .btn {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.plan .main-card .card .btn-buy {
+  background-color: #EA454C;
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 1s;
+}
+.plan .main-card .card .btn-buy:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #EA454C;
+}
+
+.call {
+  background-image: url(../../image/callUs.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 50vh;
+}
+.call .call-title {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.call .call-title h4 {
+  font-weight: bold;
+}
+.call .call-title h5 {
+  font-size: 90px;
+}
+.call .call-title p {
+  text-align: center;
+}
+
+.contact {
+  margin: 20px 0;
+  padding: 30px;
+}
+.contact .main-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact .main-info .social-info .logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.contact .main-info .social-info .logo p {
+  color: #fff;
+  font-size: 30px;
+  transition: all 1s;
+}
+.contact .main-info .social-info .logo img {
+  margin-left: 5px;
+}
+.contact .main-info .social-info .parag {
+  width: 400px;
+  color: #fff;
+  margin-top: 20px;
+}
+.contact .main-info .contact-info h3 {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 10px;
+}
+.contact .main-info .contact-info ul li {
+  display: flex;
+  margin-top: 20px;
+}
+.contact .main-info .contact-info ul li p {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.contact .main-info .contact-info ul li i {
+  color: #EA454C;
+}
+
+.toggle-nav {
+  transform: translateY(-130%);
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 1140px;
+  }
+  .client .card {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .home .home-title .home-sub .strong-title {
+    margin: auto;
+    padding: 20px;
+  }
+  .home .home-title .home-sub .strong-title h1 {
+    font-size: 40px;
+    letter-spacing: 20px;
+  }
+  .home .home-title .home-sub .strong-title p {
+    margin: 0;
+    transform: none;
+  }
+  .home .home-title .home-sub .offer {
+    transform: rotate(0);
+    text-align: center;
+    margin: auto;
+  }
+  .home .home-title .home-sub .offer h2 {
+    font-size: 23px;
+  }
+  .home .list-link {
+    flex-direction: column;
+    background-color: rgba(36, 39, 46, 0.4);
+    width: 100% !important;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: 60px;
+  }
+  .home .list-link li {
+    padding: 15px;
+  }
+  .home .icon-menu, .home .x-menu {
+    transition: all 0.7s;
+  }
+  .home .icon-menu:hover, .home .x-menu:hover {
+    color: #EA454C;
+  }
+  .home .show-menu {
+    display: block;
+  }
+  .client .card {
+    width: 100%;
+  }
+  .plan .main-card {
+    flex-direction: column;
+  }
+  .plan .content {
+    text-align: center;
+  }
+  .call .call-title h5 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .home .home-title .home-sub .strong-title {
+    margin: auto;
+    padding: 20px;
+  }
+  .home .home-title .home-sub .strong-title h1 {
+    font-size: 40px;
+    letter-spacing: 20px;
+  }
+  .home .home-title .home-sub .strong-title p {
+    margin: 0;
+    transform: none;
+  }
+  .home .home-title .home-sub .offer {
+    transform: rotate(0);
+    text-align: center;
+    margin: auto;
+  }
+  .home .home-title .home-sub .offer h2 {
+    font-size: 23px;
+  }
+  .client .card {
+    width: 100%;
+  }
+  .call .call-title h5 {
+    font-size: 40px;
+  }
+  .contact .main-info .social-info .parag {
+    width: 300px;
+  }
+}/*# sourceMappingURL=style.css.map */
